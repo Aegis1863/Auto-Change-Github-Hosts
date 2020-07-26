@@ -113,7 +113,7 @@ hosts 文件在每个系统的位置不一，详情如下：
 ![hosts参考](./img/example_hosts.png)
 
 2. ChangeHosts.py脚本设定的是运行完毕之后等待3秒自动结束（time.sleep(3)），可以在源码中取消等待（取消time.sleep(3)和import time）。
-3. ChangeHosts.py程序中默认您已经写入了github host，如模板中所示，如果您没有写，可以通过自己添加或修改源码大约30~34行的内容。
+3. ChangeHosts.py程序中默认您已经写入了github ip地址，如模板中所示，如果您没有写，可以通过自己事先添加（推荐）或修改源码大约30~34行的内容（不推荐）。
 ## 三、效果对比
 之前的样子：
 
