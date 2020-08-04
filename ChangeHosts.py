@@ -14,7 +14,7 @@ def crawl(url):
         print('爬虫失败')
         #爬虫结束
         return False
-        
+
 #取得老hosts
 def gethosts(hostsfile):
     #读到原hosts内容
@@ -26,7 +26,7 @@ def gethosts(hostsfile):
 #修改老hosts并写入新的hosts
 def writehosts(old_hosts, nh, hostsfile):
     #删除老hosts中第23行到40行（具体要修改多长，需要自己在hosts文件里面看长度）
-    for i in range(23,41)[::-1]:
+    for i in range(len(old_hosts[:25]),len(old_hosts))[::-1]:
         del old_hosts[i]
     #在被删除原ip地址的区域增加新的github ip
     old_hosts.append(nh)
