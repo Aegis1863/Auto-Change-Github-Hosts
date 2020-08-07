@@ -13,7 +13,7 @@ import traceback
 from datetime import datetime, timezone, timedelta
 from collections import Counter
 
-from retry import retry
+from tenacity import retry
 
 import requests
 
